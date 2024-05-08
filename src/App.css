@@ -1,0 +1,340 @@
+.app{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+.app__body{
+  display: flex;
+  background-color: #202022;
+  height: 98vh;
+  width: 98vw;
+  /* box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.75); */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}
+
+.signupBox{
+  background-color: #f9fafc;
+  padding: 2.7em;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 9px 2px rgba(97, 95, 97, 1);
+    -moz-box-shadow: 2px 2px 9px 2px rgba(97, 95, 97, 1);
+    box-shadow: 2px 2px 9px 2px rgba(97, 95, 97, 1);
+}
+
+.rememberMe{
+  display: flex;
+  align-items: center;
+}
+
+.rememberMe > label{
+  margin-left: 3px;
+}
+
+/* ---------------------------------signupBox---------------------------------- */
+
+.signupBox > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupBox> form > h2{
+  font-size: 30px;
+}
+
+.inputField{
+  display: flex;
+  align-items: center;
+  width: 20em;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: #dfdfdf;
+}
+
+.inputField > input{
+  outline: none;
+  border: none;
+  background-color: #dfdfdf;
+  height: 30px;
+  width: 100%;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+  /* color: #757575; */
+}
+
+.visibilityIcon{
+  display: flex;
+  align-items: center;
+  margin-right:  15px;
+}
+
+.genderDateInfobox{
+  width: 20em;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.genderDateInfobox > select{
+  height: 50px;
+  width: 8.5em;
+  padding-left: 15px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  color: #757575;
+}
+
+.genderDateInfobox > input{
+  height: 50px;
+  width: 8.5em;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  color: #757575;
+}
+
+.genderDateInfobox > select > option{
+  color: black;
+}
+
+/* ---------------------------------app__body---------------------------------- */
+
+.sidebar_first{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 4em;
+}
+
+.chat__body{
+  display: flex;
+  flex: 1;
+  background-color: #f9fafc;
+  margin: 5px 5px 5px 0px;
+  border-radius: 15px;
+}
+
+/* -----------------------------------sidebar_first-------------------------------- */
+
+.sidebar_first__top{
+  margin-top: 1em;
+}
+
+.sidebar_first__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+/* -----------------------------------chat__body-------------------------------- */
+
+.sidebar_second{
+  display: flex;
+  flex-direction: column;
+  flex:0.3;
+  min-width: 20em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chatbox{
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+  padding: 10px;
+}
+
+/* -----------------------------------sidebar_second-------------------------------- */
+
+.sidebar_second__searchbar{
+  display: flex;
+  align-items: center;
+  height: 39px;
+  padding: 10px;
+}
+
+.sidebar_second__chats{
+  display: flex;
+  flex: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  flex-direction: column;
+  padding: 0px 10px 10px 10px;
+}
+
+/* -----------------------------------sidebar_second__searchbar-------------------------------- */
+
+.sidebar_second__searchbarContainer{
+  display: flex;
+  align-items: center;
+  background-color: #DBDCFF;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+}
+
+.sidebar_second__searchbarContainer > .MuiSvgIcon-root{
+  color: #575792;
+  padding: 10px;
+}
+
+.sidebar_second__searchbarContainer> input {
+  border: none;
+  outline-width: 0;
+  background-color: #DBDCFF;
+  height: 30px;
+  font-size: 16px;
+}
+
+/* -----------------------------------sidebar_second__chats-------------------------------- */
+
+.chatContainer{
+  display: flex;
+  align-items: center;
+  padding: 14px 20px 14px 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
+  border-radius: 15px;
+}
+
+.chatContainer__info{
+  flex: 1;
+  margin-left: 15px;
+}
+
+.chatContainer:hover{
+  background-color: #EEEEF8;
+}
+
+.chatContainer__info__header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatContainer__info__header > h2{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.chatContainer__info__header > span{
+  color: #898787;
+}
+
+.chatContainer__info__message_info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.chatContainer__info__message_info > p{
+  max-width: 180px;
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #898787;
+}
+
+/* -----------------------------------chatbox-------------------------------- */
+.chatbox__header{
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #67676981;
+  cursor: pointer;
+}
+/* border-bottom: 1px solid #575792; */
+
+.chatbox__headerInfo{
+  flex: 1;
+  padding-left: 15px;
+}
+
+.chatbox__headerInfo > h3{
+  font-weight: 700;
+}
+
+.chatbox__headerInfo > p {
+  font-size: 15px;
+  color: #898787;
+  margin-top: -5px;
+}
+
+.chat_body_box{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.messagebox{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 6px 7px 0px 9px;
+  max-width: 60%;
+  border-radius: 10px;
+  margin-bottom: 3px;
+}
+/* background-color: #EEEEF8 */
+
+.sender{
+  align-self: flex-end;
+  background-color: #7678ED;
+}
+
+.receiver{
+  align-self: flex-start;
+  background-color: #EEEEF8;
+}
+
+
+.messagebox__time{
+  align-self: self-end;
+  margin:2px 3px 2px 0px;
+  font-size: xx-small;
+
+}
+ 
+
+
+.chat_footer__inputbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DBDCFF;
+  height: 40px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.chat_footer__inputbox > form{
+  flex: 1;
+  display: flex;
+}
+
+.chat_footer__inputbox > form > input{
+  flex: 1;
+  font-size: 15px;
+  outline-width: 0;
+  border: none;
+  background-color: #DBDCFF;
+}
